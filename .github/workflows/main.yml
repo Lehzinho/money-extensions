@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@main
 
       - name: Set up .NET Core
-        uses: action/setup-dotnet@v2
+        uses: actions/setup-dotnet@v2
         with:
           dotnet-version: "6.0.x"
 
@@ -25,8 +25,6 @@ jobs:
 
       - name: Create the Package
         run: dotnet pack --configuration Release
-        
-        - name: Publish
-          run:
 
- 
+      - name: Publish
+        run: dotnet nuget push "MoneyExtension/bin/Release/*.nupkg" -k ${{ secrets.NUGET_TOKEN }} -s https://api.nuget.org/v3/index.json
