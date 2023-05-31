@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
     <PackageId>cb6855e0691b4136ac7f11b4b4228288MoneyExtension</PackageId>
     <Version>1.0.1</Version>
     <License>MIT</License>
-    <Authors>André Baltieri</Authors>
+    <Authors>Alexandre Toulios</Authors>
     <Company>balta.io</Company>
     <PackageDescription>Extension to convert decimal to integer</PackageDescription>
     <Description>Extension to convert decimal to integer</Description>
